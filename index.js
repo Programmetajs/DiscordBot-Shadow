@@ -24,6 +24,10 @@ function login() { // login the bot
     }
   });
 })();
+// keep_alive handler
+function keep_alive() {
+  require("./keep_alive.js");
+}
 // creating a ( prefix ) command handler
 app.commands = new Collection();
 app.aliases = new Collection();
@@ -49,4 +53,5 @@ app.on("messageCreate", async (m) => {
     command.run(app, m, args, prefix, id);
   }
 });
+keep_alive(); // HTTP
 login(); // runner
