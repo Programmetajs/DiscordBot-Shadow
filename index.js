@@ -1,4 +1,4 @@
-const { Client } = require("discord.js")
+const { Client, Collection } = require("discord.js")
 const ch = require("chalk")
 const fs = require("fs")
 
@@ -24,6 +24,8 @@ function login() { // login the bot
   });
 })();
 // creating a ( prefix ) command handler
+app.commands = new Collection();
+app.aliases = new Collection();
 ["handler"].forEach((i) => {
   require(`./src/${i}`)(app) // connect the file
 });
