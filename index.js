@@ -5,6 +5,7 @@ const fs = require("fs")
 const app = new Client({ intents: 32767 });
 function login() { // login the bot
   app.login(process.env["token"]) // create .env name it "token" and paste there your bot token.
+  console.log(`.. || login as ${app.user.tag} || ..`);
 };
 
 (async () => { // sync bot function
