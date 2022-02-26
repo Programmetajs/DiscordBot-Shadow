@@ -5,7 +5,7 @@ const ascii = require('ascii-table');
 const table = new ascii('Status');
 table.setHeading('Name', 'Result');
 
-module.exports = (bot) => {
+module.exports = (app) => {
   
   readdirSync('./cmds').forEach(dir => {
     
@@ -15,17 +15,18 @@ module.exports = (bot) => {
       let pull = require(`../cmds/${dir}/${file}`);
       
       if (pull.name) {
-        bot.commands.set(pull.name, pull)
+        app.commands.set(pull.name, pull)
         table.addRow(file, ch.greenBright("1"));
-      } else 
+      } else {
         table.addRow(file, ch.redBright("0"));
         continue;
       }
       
       if (pull.aliases && Array.isArray(pull.alises)) pull.aliases.forEach(alias => {
-        bot.aliases.set(alias, pull.name);
+        app.aliases.set(alias, pull.name);
       })
     }
   });
   console.log(ch.blue(table.toString()));
+  
 }
