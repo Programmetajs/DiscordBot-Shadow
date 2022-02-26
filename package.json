@@ -9,6 +9,7 @@
   "author": "GalaxyTechnician",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.10.0",
     "node": "^16.13.2"
   },
   "dependencies": {
