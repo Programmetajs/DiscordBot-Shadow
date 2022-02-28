@@ -17,5 +17,3 @@
 >> * ___Now back to our repl and click the lock icon and name it token, now paste it there.___ <br>
 >>> <img src="https://cdn.discordapp.com/attachments/933182880748797962/947444840721940520/DiscordBot-TokenPaste.png" alt="example"><br>
 >> * ___Once you're done, click___ ```add new secret``` ___now click___ ```run``` ___and your bot should now running!___
-
-> ### Bye :D
