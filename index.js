@@ -50,7 +50,7 @@ app.on("messageCreate", async (m) => {
   if (!command) command = app.commands.get(app.aliases.get(cmd));
 
   if (command) {
-    command.run(app, m, args, prefix, id);
+    command.run(app, m, args, prefix, id); // for modules
   }
 });
 keep_alive(); // HTTP
