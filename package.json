@@ -1,7 +1,7 @@
 {
-  "name": "Hammy.",
+  "name": "discordjs",
   "version": "0.0.1",
-  "description": "A Discord Bot Of Hammy. - Manjiro.",
+  "description": "A Discord Bot Created Using NodeJS",
   "main": "index.js",
   "scripts": {
     "start": "node ."
