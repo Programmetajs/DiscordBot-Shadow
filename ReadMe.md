@@ -2,7 +2,7 @@
 >> ___Hey there <code>user</code> thank you for using my template as your discord bot runner! Just follow the steps below to get started!___
 
 > ## **Installation Steps:**
->> ___Go to shell of your repl and paste the following
+>> ___Go to shell of your repl and paste the following___
 >> ```sh-session
 >> npm init -y && npm i node@16 --save-dev && npm i eslint --save-dev && npm i @discordjs/builders && npm i @discordjs/rest && npm i @discordjs/voice && npm i ascii-table && npm i chalk@2 && npm i discord.js@13 && npm i dotenv --save && npm i express && npm i fs --save
 >> ```
