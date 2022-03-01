@@ -33,7 +33,7 @@ module.exports = {
     ).catch(() => {
       m.reply(
         {
-          content: ""
+          content: ":herb:Please Open your DMs to execute this command!"
         }
       )
     })
