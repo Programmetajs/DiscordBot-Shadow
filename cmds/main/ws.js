@@ -2,13 +2,13 @@
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 module.exports = {
   name: "ws",
-  run: async (app, m, args, prefix, id) => {
+  run: async (app, m, args, prefix, id, embed_default_color) => {
     m.react("✅");
     m.author.send(
       {
         embeds: [
           new MessageEmbed()
-          .setColor("BLURPLE")
+          .setColor(embed_default_color)
           .setTitle(`${app.user.username} WebSocket Ping!`)
           .setDescription(`My Current WebSocket Ping is \`${app.ws.ping}ms\``)
           .setFooter(
