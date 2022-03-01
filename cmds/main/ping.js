@@ -2,13 +2,13 @@
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 module.exports = {
   name: "ping", // the command name - remember this is a file template for making a new command
-  run: async (app, m, args, prefix, id) => {
+  run: async (app, m, args, prefix, id, embed_default_color) => {
     m.react("✅");
     m.author.send(
       {
         embeds: [
           new MessageEmbed()
-          .setColor("BLURPLE")
+          .setColor(embed_default_color)
           .setDescription(":tada:Pong!")
           .setFooter(
             {
