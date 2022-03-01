@@ -1,4 +1,4 @@
-// WebSocket Ping or speed in embed command.
+// WebSocket Ping or speed in embed command
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 module.exports = {
   name: "ws",
