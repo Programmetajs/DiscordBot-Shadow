@@ -38,7 +38,7 @@ app.on("messageCreate", async (m) => {
   if (m.author.bot) return;
   if (!m.guild) return;
   
-  const { prefix, id } = require("./src/config.json");
+  const { prefix, id, embed_default_color } = require("./src/config.json");
   
   if (!m.content.startsWith(prefix)) return;
   if (!m.member) m.member = await m.guild.fetchMember(m);
@@ -50,7 +50,7 @@ app.on("messageCreate", async (m) => {
   if (!command) command = app.commands.get(app.aliases.get(cmd));
 
   if (command) {
-    command.run(app, m, args, prefix, id); // for modules
+    command.run(app, m, args, prefix, id, embed_default_color); // for modules
   }
 });
 keep_alive(); // HTTP
