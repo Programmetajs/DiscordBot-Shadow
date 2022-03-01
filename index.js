@@ -54,4 +54,8 @@ app.on("messageCreate", async (m) => {
   }
 });
 keep_alive(); // HTTP
+function slash_handler() {
+  require("./slash_handler.js");
+}
+slash_handler() // slash handler fs
 login(); // runner
