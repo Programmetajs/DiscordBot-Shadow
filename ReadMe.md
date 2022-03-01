@@ -30,7 +30,7 @@
 >> * ___Go here:___ <a href="https://uptimerobot.com">UptimeRobot</a><br>
 >> * ___Now let create new monitor, Click___ ```add new monitor```<br>
 >> * ___Then copy your repl link;___<br>
->> <img src="https://cdn.discordapp.com/attachments/933182880748797962/948090627411820604/DiscordBot-KeepAive.png" alt="example"><br>
+>>> <img src="https://cdn.discordapp.com/attachments/933182880748797962/948090627411820604/DiscordBot-KeepAive.png" alt="example"><br>
 >> * ___Copy the image below;___<br>
->> <img src="https://cdn.discordapp.com/attachments/933182880748797962/948092607786008626/DiscordBot-KeepAlive2.png" alt="example"><br>
->> * ___Now scroll down and click___ ```Create Monitor```, ___Now your bot shall now running 24/7 and has now 3 commands. Happy to help :)___
+>>> <img src="https://cdn.discordapp.com/attachments/933182880748797962/948092607786008626/DiscordBot-KeepAlive2.png" alt="example"><br>
+>> * ___Now scroll down and click___ ```Create Monitor```, ___Now your bot shall now running 24/7 and has now 3 commands. Happy to help :)___<br>
