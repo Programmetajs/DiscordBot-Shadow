@@ -25,3 +25,12 @@
 >> * ___Now back to our repl and click the lock icon and name it token, now paste it there.___ <br>
 >>> <img src="https://cdn.discordapp.com/attachments/933182880748797962/947444840721940520/DiscordBot-TokenPaste.png" alt="example"><br>
 >> * ___Once you're done, click___ ```add new secret``` ___now click___ ```run``` ___and your bot should now running!___
+
+> ## **Running the Bot 24/7:**
+>> * ___Go here:___ <a href="https://uptimerobot.com">UptimeRobot</a><br>
+>> * ___Now let create new monitor, Click___ ```add new monitor```<br>
+>> * ___Then copy your repl link;___<br>
+>> <img src="https://cdn.discordapp.com/attachments/933182880748797962/948090627411820604/DiscordBot-KeepAive.png" alt="example"><br>
+>> * ___Copy the image below;___<br>
+>> <img src="https://cdn.discordapp.com/attachments/933182880748797962/948092607786008626/DiscordBot-KeepAlive2.png" alt="example"><br>
+>> * ___Now scroll down and click___ ```Create Monitor```, ___Now your bot shall now running 24/7 and has now 3 commands. Happy to help :)___
