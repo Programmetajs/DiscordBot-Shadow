@@ -6,6 +6,14 @@
 >> ```sh-session
 >> npm init -y && npm i node@16 --save-dev && npm i eslint --save-dev && npm i @discordjs/builders && npm i @discordjs/rest && npm i @discordjs/voice && npm i ascii-table && npm i chalk@2 && npm i discord.js@13 && npm i dotenv --save && npm i express && npm i fs --save
 >> ```
+>> ___Paste this in your repl shell for more faster WebSocket.___
+>> ```sh-session
+>> npm install zlib-sync && npm install discord/erlpack && npm install bufferutil && npm install utf-8-validate --save
+>> ```
+>> ___Paste this also to your repl shell for discordJS voice support.___
+>> ```sh-session
+>> npm install @discordjs/voice
+>> ```
 
 > ## **Connecting Discord bot:**
 >> ___Go to___ ```src folder``` ___and find___ ```config.json```___, In this file you will find a___ ```4 code line``` ___in the 2 line its name is___ ```prefix``` ___this is your bot command prefix in the entire prefix commands of your feature bot, for example:___ ```!ping```<br>
