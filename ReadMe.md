@@ -10,9 +10,9 @@
 >> ```sh-session
 >> npm install zlib-sync && npm install discord/erlpack && npm install bufferutil && npm install utf-8-validate --save
 >> ```
->> __Uhhh, i dunno whats this but just paste it to your repl shell.___
+>> __Uhhh, i dunno whats this but just paste it to your repl shell, this will make your repl run :) trust me.___
 >> ```sh-session
->> npm i node@16 --save-dev
+>> npm init -y && npm i --save-dev node@16 && npm config set prefix=$(pwd)/node_modules/node && export PATH=$(pwd)/node_modules/node/bin:$PATH
 >> ```
 
 > ## **Connecting Discord bot:**
