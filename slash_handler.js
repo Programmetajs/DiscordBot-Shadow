@@ -2,7 +2,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const fs = require("fs");
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9'); // objects for registering slash commands
-
+const ch = require("chalk");  // console  color :D
 module.exports = (app) => {
   const files = fs.readdirSync('./util').filter(file => file.endsWith('.js')); // folder of your slash (/) commands
   const stores = []; // this is where we are going to store all the slash (/) data/s
@@ -46,7 +46,7 @@ module.exports = (app) => {
             console.log(ch.greenBright("> Successfully Slash (/) commands."))
             console.log(ch.greenBright(ch.bold(`> Registered (${app.commands.size})`) + ` commands in the bot`))
         } catch (err) {
-            if (err) console.loh(ch.redBright(err);
+            if (err) console.loh(ch.redBright(err));
         }
       })();
     })
