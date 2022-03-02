@@ -7,7 +7,7 @@ module.exports = (app) => {
   const files = fs.readdirSync('./util').filter(file => file.endsWith('.js')); // folder of your slash (/) commands
   const stores = []; // this is where we are going to store all the slash (/) data/s
   for (var i of files) {
-      const util = require(`./util/${i}`);
+      const util = require(`./util/${i}`)(app)
       stores.push(util.data.toJSON());
       app.commands.set(util.data.name, util);
   } // slash handler
