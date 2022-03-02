@@ -2,7 +2,8 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const fs = require("fs");
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9'); // objects for registering slash commands
-(async () => {
+
+module.exports = (app) => {
   const files = fs.readdirSync('./util').filter(file => file.endsWith('.js')); // folder of your slash (/) commands
   const stores = []; // this is where we are going to store all the slash (/) data/s
   for (var i of files) {
@@ -11,14 +12,14 @@ const { Routes } = require('discord-api-types/v9'); // objects for registering s
       app.commands.set(util.data.name, util);
   } // slash handler
   const rest = new REST({version: '9'}).setToken(process.env["token"]); // registering the slash (/) commands to your app/bot
-  app.on('interactionCreate', async (action) => {
-      if (!action.isCommand()) return;
-      const cmd_name = app.commands.get(action.commandName);
+  app.on('interactionCreate', async (interaction) => {
+      if (!interaction.isCommand()) return;
+      const cmd_name = app.commands.get(interaction.commandName);
       if (!cmd_name) return;
       try {
-          await cmd_name.execute(action);
+          await cmd_name.execute(interaction);
       } catch {
-          await action.reply(
+          await interaction.reply(
             {
               embeds: [
                 new MessageEmbed()
@@ -52,4 +53,4 @@ const { Routes } = require('discord-api-types/v9'); // objects for registering s
   } catch (err) {
     if (err) return;
   }
-})();
+}
