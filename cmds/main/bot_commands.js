@@ -10,7 +10,7 @@ module.exports = {
           new MessageEmbed()
           .setColor(embed_default_color)
           .setTitle(`${app.user.username} commands list!`)
-          .setDescription(`__**Main Commands:**__\n>\`${prefix}ping\`\n\`${prefix}ws\`\n\`${prefix}commands\`\n\n__**Fun Command:**__\n>\`${prefix}jokes\`\n\n__**Slash (/) Command:**__\n>\`/ping\``)
+          .setDescription(`__**Main Commands:**__\n> \`${prefix}ping\`\n\`${prefix}ws\`\n\`${prefix}commands\`\n\n__**Fun Command:**__\n> \`${prefix}jokes\`\n\n__**Slash (/) Command:**__\n> \`/ping\``)
           .setFooter(
             {
               text: `[ ${prefix}commands | ${m.author.tag} ] `,
