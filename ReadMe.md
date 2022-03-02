@@ -34,7 +34,7 @@
 >>> * ___Third, Find___ ```Developer Mode``` ___, then enabled it.___
 >> ### **Getting User Id:**
 >>> * ___First, Find the user you want to get the id.___
->>> * ___Second, Right the user profile.___
+>>> * ___Second, Right click the user profile.___
 >>> * ___Third, find___ ```copy id``` ___, then click it, Now you shall now copied the user id.___
 
 > ## **Running the Bot 24/7:**
