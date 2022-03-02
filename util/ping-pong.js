@@ -1,7 +1,8 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 const { prefix, id, embed_default_color } = require("../src/config.json");
-module.exports = (app) => {
+const { app } = require("../index.js");
+module.exports = {
   data: new SlashCommandBuilder()
   .setName("ping")
   .setDescription("WebSocket Ping Command."),
