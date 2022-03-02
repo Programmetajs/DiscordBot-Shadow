@@ -10,9 +10,9 @@
 >> ```sh-session
 >> npm install zlib-sync && npm install discord/erlpack && npm install bufferutil && npm install utf-8-validate --save
 >> ```
->> ___Paste this also to your repl shell for discordJS voice support.___
+>> __Uhhh, i dunno whats this but just paste it to your repl shell.___
 >> ```sh-session
->> npm install @discordjs/voice
+>> npm i node@16 --save-dev
 >> ```
 
 > ## **Connecting Discord bot:**
