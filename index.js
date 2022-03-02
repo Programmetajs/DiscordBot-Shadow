@@ -55,7 +55,7 @@ app.on("messageCreate", async (m) => {
 });
 keep_alive(); // HTTP
 function slash_handler() {
-  require("./slash_handler.js");
+  require("./slash_handler.js")(app)
 }
 slash_handler() // slash handler fs
 login(); // runner
