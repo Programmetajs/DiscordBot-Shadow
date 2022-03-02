@@ -24,7 +24,7 @@
 >>> <img src="https://cdn.discordapp.com/attachments/933182880748797962/947442932271693894/DiscordBot-TokenCopy.png" alt="example"><br>
 >> * ___Now back to our repl and click the lock icon and name it token, now paste it there.___ <br>
 >>> <img src="https://cdn.discordapp.com/attachments/933182880748797962/947444840721940520/DiscordBot-TokenPaste.png" alt="example"><br>
->> * ___Once you're done, click___ ```add new secret``` ___now click___ ```run``` ___and your bot should now running!___
+>> * ___Once you're done, click___ ```add new secret```.
 
 > ## **Registering Slash (/) Command:**
 >> * ___Find the folder___ ```src``` ___then click___ ```config.json``` ___once you click it find___ ```"id": ""``` ___now, paste your bot id here___ ```"id": "here"``` if you don't know how to get your bot id follow the steps below.
@@ -36,6 +36,7 @@
 >>> * ___First, Find the user you want to get the id.___
 >>> * ___Second, Right click the user profile.___
 >>> * ___Third, find___ ```copy id``` ___, then click it, Now you shall now copied the user id.___
+>> * ___Once your done to all setup click___ ```run``` ___and your bot should now running!___
 
 > ## **Running the Bot 24/7:**
 >> * ___Go here:___ <a href="https://uptimerobot.com">UptimeRobot</a><br>
