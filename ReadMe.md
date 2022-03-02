@@ -26,6 +26,17 @@
 >>> <img src="https://cdn.discordapp.com/attachments/933182880748797962/947444840721940520/DiscordBot-TokenPaste.png" alt="example"><br>
 >> * ___Once you're done, click___ ```add new secret``` ___now click___ ```run``` ___and your bot should now running!___
 
+> ## **Registering Slash (/) Command:**
+>> * ___Find the folder___ ```src``` ___then click___ ```config.json``` ___once you click it find___ ```"id": ""``` ___now, paste your bot id here___ ```"id": "here"``` if you don't know how to get your bot id follow the steps below.
+>> ### **Enabling Developer Mode (Discord):**
+>>> * ___First, Go to___ ```user settings```.
+>>> * ___Second, Click Advance.___
+>>> * ___Third, Find___ ```Developer Mode``` ___, then enabled it.___
+>> ### **Getting User Id:**
+>>> * ___First, Find the user you want to get the id.___
+>>> * ___Second, Right the user profile.___
+>>> * ___Third, find___ ```copy id``` ___, then click it, Now you shall now copied the user id.___
+
 > ## **Running the Bot 24/7:**
 >> * ___Go here:___ <a href="https://uptimerobot.com">UptimeRobot</a><br>
 >> * ___Now let create new monitor, Click___ ```add new monitor```<br>
