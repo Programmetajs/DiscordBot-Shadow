@@ -3,5 +3,11 @@ module.exports = {
   data: new SlashCommandBuilder()
   .setName("ping")
   .setDescription("WebSocket Ping Command."),
-  async execute(interaction) {}
+  async execute(interaction) {
+    await interaction.reply(
+      {
+        content: "Pong!"
+      }
+    )
+  }
 }
