@@ -1,7 +1,10 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
+const { MessageEmbed, MessageActionRow, MessageButton, Client } = require("discord.js");
 const { prefix, id, embed_default_color } = require("../src/config.json");
-const { app } = require("../index.js");
+const app = new Client({ intents: 32767 });
+function login() { 
+  app.login(process.env["token"]) 
+}
 module.exports = {
   data: new SlashCommandBuilder()
   .setName("ping")
@@ -31,3 +34,4 @@ module.exports = {
     )
   }
 }
+login(); // please don't change these D:
