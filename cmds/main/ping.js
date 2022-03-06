@@ -1,14 +1,14 @@
 // ping-pong command in embed command
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 module.exports = {
-  name: "ping", // the command name - remember this is a file template for making a new command
-  run: async (app, m, args, prefix, id, embed_default_color) => {
+  name: "pinggg", // the command name - remember this is a file template for making a new command
+  run: async (app, m, args, prefix, id, embeddefault) => {
     m.react("✅");
     m.author.send(
       {
         embeds: [
           new MessageEmbed()
-          .setColor(embed_default_color)
+          .setColor(embeddefault)
           .setDescription(":tada:Pong!")
           .setFooter(
             {
