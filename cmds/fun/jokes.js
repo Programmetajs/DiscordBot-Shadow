@@ -3,14 +3,14 @@ const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js")
 const fetch = require("node-fetch")
 module.exports = {
   name: "jokes",
-  run: async (app, m, args, prefix, id, embed_default_color) => {
+  run: async (app, m, args, prefix, id, embeddefault) => {
     const { joke } = await fetch("https://some-random-api.ml/joke").then((response) => response.json());
     m.react("✅");
     m.author.send(
       {
         embeds: [
           new MessageEmbed()
-          .setColor(embed_default_color)
+          .setColor(embeddefault)
           .setTitle("Funny Jokes!")
           .setDescription(joke)
           .setFooter(
