@@ -2,13 +2,13 @@
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 module.exports = {
   name: "commands",
-  run: async (app, m, args, prefix, id, embed_default_color) => {
+  run: async (app, m, args, prefix, id, embeddefault) => {
     m.react("✅");
     m.author.send(
       {
         embeds: [
           new MessageEmbed()
-          .setColor(embed_default_color)
+          .setColor(embeddefault)
           .setTitle(`${app.user.username} commands list!`)
           .setDescription(`__**Main Commands:**__\n> \`${prefix}ping\`\n\`${prefix}ws\`\n\`${prefix}commands\`\n\n__**Fun Command:**__\n> \`${prefix}jokes\`\n\n__**Slash (/) Command:**__\n> \`/ping\``)
           .setFooter(
